@@ -32,19 +32,17 @@ class App < Sinatra::Base
     @x = params[:number1].to_i
     @y = params[:number2].to_i
       if @op == "add"
-        @x + @y
-      end
+        @val = @x + @y
 
       elsif @op == "subtract"
-        @x - @y
-      end
+        @val = @x - @y
 
       elsif @op == "multiply"
-        @x * @y
-      end
+        @val = @x * @y
 
       else @op == "divide"
-        @x / @yend
-    end
-
+        @val = @x / @y
+      end
+        "#{@val}"
+  end
 end
