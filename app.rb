@@ -44,4 +44,4 @@ class App < Sinatra::Base
         @x / @y
     end
   end
-end 
+end
