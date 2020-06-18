@@ -42,7 +42,7 @@ class App < Sinatra::Base
 
       else @op == "divide"
         @val = @x / @y
-    end
-    "#{@val}"
+      end
+        "#{@val}"
   end
 end
